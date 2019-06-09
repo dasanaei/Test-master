@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.ravenscroft.ravgpa.Settings">
+
+
+    <CheckBox
+        android:text="AP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ap5"
+        android:layout_alignBottom="@+id/EC5"
+        android:layout_toRightOf="@+id/EC5"
+        android:layout_toEndOf="@+id/EC5"
+        app:buttonTint="@color/colorAccent" />
+
+    <CheckBox
+        android:text="AP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ap4"
+        android:layout_alignBaseline="@+id/EC4"
+        android:layout_alignBottom="@+id/EC4"
+        android:layout_toRightOf="@+id/EC4"
+        android:layout_toEndOf="@+id/EC4"
+        app:buttonTint="@color/colorAccent" />
+
+    <CheckBox
+        android:text="AP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ap7"
+        android:layout_alignBaseline="@+id/EC7"
+        android:layout_alignBottom="@+id/EC7"
+        android:layout_toRightOf="@+id/EC7"
+        android:layout_toEndOf="@+id/EC7"
+        app:buttonTint="@color/colorAccent" />
+
+    <CheckBox
+        android:text="AP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ap3"
+        android:layout_alignBaseline="@+id/EC3"
+        android:layout_alignBottom="@+id/EC3"
+        android:layout_toRightOf="@+id/EC3"
+        android:layout_toEndOf="@+id/EC3"
+        app:buttonTint="@color/colorAccent" />
+
+    <CheckBox
+        android:text="H."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/h3"
+        android:layout_alignBaseline="@+id/ap3"
+        android:layout_alignBottom="@+id/ap3"
+        android:layout_toRightOf="@+id/ap3"
+        android:layout_toEndOf="@+id/ap3"
+        app:buttonTint="@color/colorAccent" />
+
+    <CheckBox
+        android:text="H."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/h6"
+        android:layout_alignBaseline="@+id/ap6"
+        android:layout_alignBottom="@+id/ap6"
+        android:layout_toRightOf="@+id/ap6"
+        android:layout_toEndOf="@+id/ap6"
+        app:buttonTint="@color/colorAccent" />
+
+    <CheckBox
+        android:text="H."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/h7"
+        android:layout_alignBaseline="@+id/ap7"
+        android:layout_alignBottom="@+id/ap7"
+        android:layout_toRightOf="@+id/ap7"
+        android:layout_toEndOf="@+id/ap7"
+        app:buttonTint="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/EC6"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:text="Enter Class"
+        android:width="175dp"
+        android:height="40dp"
+        android:layout_below="@+id/EC5"
+        android:layout_alignLeft="@+id/EC5"
+        android:layout_alignStart="@+id/EC5"
+        android:layout_marginTop="26dp"></EditText>
+
+    <CheckBox
+        android:text="H."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/h4"
+        android:layout_alignBaseline="@+id/ap4"
+        android:layout_alignBottom="@+id/ap4"
+        android:layout_toRightOf="@+id/ap4"
+        android:layout_toEndOf="@+id/ap4"
+        app:buttonTint="@color/colorAccent" />
+
+    <CheckBox
+        android:text="AP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ap6"
+        android:layout_alignTop="@+id/EC6"
+        android:layout_toRightOf="@+id/EC6"
+        android:layout_toEndOf="@+id/EC6"
+        app:buttonTint="@color/colorAccent" />
+
+    <CheckBox
+        android:text="H."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/h5"
+        android:layout_alignBaseline="@+id/ap5"
+        android:layout_alignBottom="@+id/ap5"
+        android:layout_toRightOf="@+id/ap5"
+        android:layout_toEndOf="@+id/ap5"
+        app:buttonTint="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/EC5"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:text="Enter Class"
+        android:width="175dp"
+        android:height="40dp"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/ap4"
+        android:layout_toLeftOf="@+id/ap4"
+        android:layout_toStartOf="@+id/ap4"
+        android:minHeight="40dp"></EditText>
+
+    <EditText
+        android:id="@+id/EC3"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:text="Enter Class"
+        android:width="175dp"
+        android:height="40dp"
+        android:layout_below="@+id/ap2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp"></EditText>
+
+    <CheckBox
+        android:text="AP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ap2"
+        app:buttonTint="@color/colorAccent"
+        android:layout_alignBaseline="@+id/EC2"
+        android:layout_alignBottom="@+id/EC2"
+        android:layout_toRightOf="@+id/EC2"
+        android:layout_toEndOf="@+id/EC2" />
+
+    <CheckBox
+        android:text="H."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/h2"
+        app:buttonTint="@color/colorAccent"
+        android:layout_toRightOf="@+id/ap2"
+        android:layout_toEndOf="@+id/ap2"
+        android:layout_alignTop="@+id/ap2" />
+
+    <CheckBox
+        android:text="H."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/h1"
+        app:buttonTint="@color/colorAccent"
+        android:layout_alignBaseline="@+id/ap1"
+        android:layout_alignBottom="@+id/ap1"
+        android:layout_toRightOf="@+id/ap1"
+        android:layout_toEndOf="@+id/ap1" />
+
+    <EditText
+        android:id="@+id/EC1"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:text="Enter Class"
+        android:width="175dp"
+        android:height="40dp"
+        android:layout_above="@+id/ap2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="26dp"></EditText>
+
+    <CheckBox
+        android:text="AP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ap1"
+        app:buttonTint="@color/colorAccent"
+        android:layout_alignTop="@+id/EC1"
+        android:layout_toRightOf="@+id/EC1"
+        android:layout_toEndOf="@+id/EC1" />
+
+    <EditText
+        android:id="@+id/EC7"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:text="Enter Class"
+        android:width="175dp"
+        android:height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/EC6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></EditText>
+
+    <EditText
+        android:id="@+id/EC4"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:text="Enter Class"
+        android:width="175dp"
+        android:height="40dp"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/EC3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></EditText>
+
+    <EditText
+        android:id="@+id/EC2"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:text="Enter Class"
+        android:width="175dp"
+        android:height="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></EditText>
+
+    <Button
+        android:text="DONE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/donebutton"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/ap7"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

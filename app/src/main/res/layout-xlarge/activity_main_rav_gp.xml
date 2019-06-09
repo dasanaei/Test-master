@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+
+    tools:context="org.ravenscroft.ravgpa.RavGPA">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_menu_help"
+        app:backgroundTint="@android:color/holo_blue_dark" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Spinner
+            android:id="@+id/spinnerCL7"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:entries="@array/grade_arrays"
+            android:prompt="@string/grade_prompt"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_alignTop="@+id/textViewCL7"
+            android:layout_toRightOf="@+id/textViewCL7"
+            android:layout_toEndOf="@+id/textViewCL7"
+            android:layout_alignBottom="@+id/textViewCL7" />
+
+        <Spinner
+            android:id="@+id/spinnerCL2"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:entries="@array/grade_arrays"
+            android:prompt="@string/grade_prompt"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_alignTop="@+id/textViewCL2"
+            android:layout_alignBottom="@+id/textViewCL2"
+            android:layout_alignLeft="@+id/spinnerCL3"
+            android:layout_alignStart="@+id/spinnerCL3"
+            android:layout_alignRight="@+id/spinnerCL3"
+            android:layout_alignEnd="@+id/spinnerCL3" />
+
+        <Spinner
+            android:id="@+id/spinnerCL3"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:entries="@array/grade_arrays"
+            android:prompt="@string/grade_prompt"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_alignTop="@+id/textViewCL3"
+            android:layout_alignLeft="@+id/spinnerCL4"
+            android:layout_alignStart="@+id/spinnerCL4"
+            android:layout_alignBottom="@+id/textViewCL3"
+            android:layout_alignRight="@+id/spinnerCL4"
+            android:layout_alignEnd="@+id/spinnerCL4" />
+
+        <Spinner
+            android:id="@+id/spinnerCL1"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:entries="@array/grade_arrays"
+            android:prompt="@string/grade_prompt"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_alignLeft="@+id/spinnerCL2"
+            android:layout_alignStart="@+id/spinnerCL2"
+            android:layout_alignBottom="@+id/textViewCL1"
+            android:layout_alignTop="@+id/textViewCL1" />
+
+        <Spinner
+            android:id="@+id/spinnerCL4"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:entries="@array/grade_arrays"
+            android:prompt="@string/grade_prompt"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_alignBottom="@+id/textViewCL4"
+            android:layout_alignLeft="@+id/spinnerCL5"
+            android:layout_alignStart="@+id/spinnerCL5"
+            android:layout_alignTop="@+id/textViewCL4" />
+
+        <Button
+            android:text="CALCULATE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/testbut"
+            app:layout_anchorGravity="center_vertical|center_horizontal"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:height="75dp"
+            android:width="120dp"
+            android:hapticFeedbackEnabled="true" />
+
+        <Spinner
+            android:id="@+id/spinnerCL5"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:entries="@array/grade_arrays"
+            android:prompt="@string/grade_prompt"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_alignLeft="@+id/spinnerCL6"
+            android:layout_alignStart="@+id/spinnerCL6"
+            android:layout_alignBottom="@+id/textViewCL5"
+            android:layout_alignTop="@+id/textViewCL5" />
+
+        <Spinner
+            android:id="@+id/spinnerCL6"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:entries="@array/grade_arrays"
+            android:prompt="@string/grade_prompt"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_alignTop="@+id/textViewCL6"
+            android:layout_alignLeft="@+id/spinnerCL7"
+            android:layout_alignStart="@+id/spinnerCL7"
+            android:layout_above="@+id/textViewCL7" />
+
+        <TextView
+            android:text="GPA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/gpatext"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:layout_above="@+id/testbut"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="Class One"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCL1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:editable="false"
+            android:textColorLink="@android:color/black"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:textSize="10pt"
+            android:textAllCaps="false"
+            android:layout_marginTop="74dp"
+            android:width="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp" />
+
+        <TextView
+            android:text="Class Two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCL2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:editable="false"
+            android:textColorLink="@android:color/black"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:textSize="10pt"
+            android:textAllCaps="false"
+            android:layout_marginTop="18dp"
+            android:width="200dp"
+            android:layout_below="@+id/textViewCL1"
+            android:layout_alignLeft="@+id/textViewCL1"
+            android:layout_alignStart="@+id/textViewCL1" />
+
+        <TextView
+            android:text="Class Three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCL3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:editable="false"
+            android:textColorLink="@android:color/black"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:textSize="10pt"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:width="200dp"
+            android:layout_below="@+id/textViewCL2"
+            android:layout_alignLeft="@+id/textViewCL2"
+            android:layout_alignStart="@+id/textViewCL2" />
+
+        <TextView
+            android:text="Class Seven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCL7"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:editable="false"
+            android:textColorLink="@android:color/black"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:textSize="10pt"
+            android:textAllCaps="false"
+            android:layout_marginTop="24dp"
+            android:width="200dp"
+            android:layout_below="@+id/textViewCL6"
+            android:layout_alignLeft="@+id/textViewCL6"
+            android:layout_alignStart="@+id/textViewCL6" />
+
+        <TextView
+            android:text="Class Four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCL4"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:editable="false"
+            android:textColorLink="@android:color/black"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:textSize="10pt"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:width="200dp"
+            android:layout_below="@+id/textViewCL3"
+            android:layout_alignLeft="@+id/textViewCL3"
+            android:layout_alignStart="@+id/textViewCL3" />
+
+        <TextView
+            android:text="Class Six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCL6"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:editable="false"
+            android:textColorLink="@android:color/black"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:textSize="10pt"
+            android:textAllCaps="false"
+            android:layout_marginTop="24dp"
+            android:width="200dp"
+            android:layout_below="@+id/textViewCL5"
+            android:layout_alignLeft="@+id/textViewCL5"
+            android:layout_alignStart="@+id/textViewCL5" />
+
+        <TextView
+            android:text="Class Five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCL5"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:editable="false"
+            android:textColorLink="@android:color/black"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:textSize="10pt"
+            android:textAllCaps="false"
+            android:width="200dp"
+            android:layout_below="@+id/textViewCL4"
+            android:layout_alignLeft="@+id/textViewCL4"
+            android:layout_alignStart="@+id/textViewCL4" />
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

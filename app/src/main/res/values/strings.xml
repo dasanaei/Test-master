@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">GPA Calculator</string>
+    <string name="action_settings">Edit Classes</string>
+    <string name="grade_prompt">What grade did you get?</string>
+
+    <string-array name="grade_arrays">
+        <item>  </item>
+        <item>A+</item>
+        <item>A</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B</item>
+        <item>B-</item>
+        <item>C+</item>
+        <item>C</item>
+        <item>C-</item>
+        <item>D+</item>
+        <item>D</item>
+        <item>F</item>
+    </string-array>
+    <string-array name="blubspinner">
+        <item>Enter Status</item>
+        <item>First Semester Freshman Year</item>
+        <item>Second Semester Freshman Year</item>
+        <item>First Semester Sophomore Year</item>
+        <item>Second Semester Sophomore Year</item>
+        <item>First Semester Junior Year</item>
+        <item>Second Semester Junior Year</item>
+        <item>First Semester Senior Year</item>
+        <item>Second Semester Senior Year</item>
+    </string-array>
+    <string name="title_activity_cum_gp">Cumulative GPA Calculator</string>
+    <string name="title_activity_mathster">Mathster</string>
+
+</resources>
+
